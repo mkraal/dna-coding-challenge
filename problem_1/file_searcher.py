@@ -160,21 +160,3 @@ class FileSearcher:
     def print_result(self) -> None:
         """Prints out the result"""
         print(self.run())
-
-
-def main():
-    CLEAR_CACHE = False
-    if not len(sys.argv) == 3:
-        raise SyntaxError(
-            "Wrong usage, use: `python <filename>.py <path_to_dataset> <target row>"
-        )
-    input_path = Path(sys.argv[1])
-    target = int(sys.argv[2])
-    if CLEAR_CACHE:
-        clear_cache(input_path.parent)
-    searcher = FileSearcher(input_path, target)
-    searcher.print_result()
-
-
-if __name__ == "__main__":
-    main()
