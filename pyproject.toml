@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dnanexus"
+version = "0.1.0"
+description = ""
+authors = ["Michal Kral <michalkraal@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+faker = "^26.0.0"
+ruff = "^0.5.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

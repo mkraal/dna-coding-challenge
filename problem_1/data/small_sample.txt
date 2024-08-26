@@ -1,0 +1,5 @@
+nula
+jedna
+dva
+tri
+ctyri
